@@ -4,7 +4,7 @@ const exec = require('child_process').execFile;
 var math = require('mathjs');
 var numbers = require('numbers');
 var prettyjson = require('prettyjson');
-var wolfram = require('wolfram').createClient("YQVGHA-PA8PG92GAG");
+var wolfram = require('wolfram').createClient("APP-ID");
 var  request = require('request');
 // Create simple echo bot
  var download = function(uri, filename, callback){
@@ -16,7 +16,7 @@ var  request = require('request');
   });
 };
  
-login({email: "titrateacids@gmail.com", password: "Boombox@asd123"}, function callback (err, api) {
+login({email: "fb email", password: "fb password"}, function callback (err, api) {
     if(err) return console.error(err);
        api.listen(function callback(err, message) {
 
