@@ -12,3 +12,5 @@ In bot.js fill in the account you want to use for your bot. Then go to your term
 Commands: 
 This can be added to a group chat so in order to trigger the bot your message must start with /wolf . Your request must be in the same message as the /wolf . Wait a couple of seconds and images will be sent to the chat answering your query.
 
+Examples: /wolf H2O
+          /wolf integrate x(sin x^2)
