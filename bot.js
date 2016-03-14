@@ -28,7 +28,7 @@ login({email: "fb email", password: "fb password"}, function callback (err, api)
 				       mes = mes.substring(6);
 					console.log(mes);	
 					wolfram.query(mes, function(err, result) {
-									  console.log(JSON.stringify(result));
+							        console.log(JSON.stringify(result));
 								var counter=0;
 								
 								
@@ -50,14 +50,14 @@ login({email: "fb email", password: "fb password"}, function callback (err, api)
 
 	
 function everything(result,i,api,message){
-download(result[i].subpods[0].image, 'google.jpg', function(){
-          	                                                                                              var msg = {
-                                                                                                                        attachment: fs.createReadStream('google.jpg')
-                                                                                                                }
-                                                                                                                api.sendMessage( msg,message.threadID,function(){
-                                                                                                                });                                                                                        
-                                                                                                        });
-
-
+	download(result[i].subpods[0].image, 'google.jpg', function(){
+		var msg = {
+                	attachment: fs.createReadStream('google.jpg')
+       		}
+         	api.sendMessage( msg,message.threadID,function(){
+                                                                                                                                                                                                                                                                                                                                                                                                                      	                                                                                            
+	 	});                                                                                        
+                                                                                                    
+    	});  
 }
 
