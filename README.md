@@ -17,3 +17,5 @@ Examples:
           /wolf H2O
           
           /wolf integrate x(sin x^2)
+
+/wolf size of the sun
