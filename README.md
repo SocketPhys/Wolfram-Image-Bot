@@ -18,4 +18,4 @@ Examples:
           
           /wolf integrate x(sin x^2)
 
-/wolf size of the sun
+          /wolf size of the sun
